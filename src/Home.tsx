@@ -1,10 +1,9 @@
 'use client';
-import { SlidingNumber } from "./components/motion-primitives/sliding-number";
-
 import { useAuth } from "./context/AuthContext";
 import { Button } from "./components/ui/button";
 import { Avatar,AvatarImage } from "@radix-ui/react-avatar";
 import { useEffect, useState } from "react";
+import { SlidingNumber } from "./components/motion-primitives/sliding-number";
 
 
 export const Home = () => {
