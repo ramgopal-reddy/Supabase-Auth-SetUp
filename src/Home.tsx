@@ -24,7 +24,7 @@ export const Home = () => {
                     </Button>
                 </div>
             ):(
-            <Button onClick={signInWithGitHub}>
+            <Button onClick={signInWithGitHub} className="bg-white text-black hover:bg-white-200">
                 Sign with GitHub
             </Button>
             )}
