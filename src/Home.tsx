@@ -1,6 +1,6 @@
 import { useAuth } from "./context/AuthContext";
 import { Button } from "./components/ui/button";
-import { Avatar,AvatarFallback,AvatarImage } from "@radix-ui/react-avatar";
+import { Avatar,AvatarImage } from "@radix-ui/react-avatar";
 
 
 export const Home = () => {
