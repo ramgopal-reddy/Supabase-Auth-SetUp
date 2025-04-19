@@ -20,7 +20,7 @@ export const Home = () => {
                     <p>{user?.email}</p>
                     <h1>Welcome {displayUser}</h1>
                     <Button variant="destructive" onClick={signOut}>
-                        Sign out
+                        SignOut
                     </Button>
                 </div>
             ):(
