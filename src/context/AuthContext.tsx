@@ -52,15 +52,15 @@ export const AuthProvider=({ children }: { children: React.ReactNode }) => {
 
     return ( 
     <AuthContext.Provider value={{user,signInWithGitHub,signInWithGoogle,signOut}}>
-        {" "}{children}{" "}
+        {" "}{children}{children}{" "}
     </AuthContext.Provider>
     );
 };
 
-export const useAuth=():AuthContextType=>{
-    const context=useContext(AuthContext);
-    if(context===undefined){
-        throw new Error("useAuth must be used within an AuthProvider")
+export const useAuth = (): AuthContextType => {
+    const context = useContext(AuthContext);
+    if (context === undefined) {
+        throw new Error("useAuth must be used within an AuthProvider");
     }
     return context;
 };

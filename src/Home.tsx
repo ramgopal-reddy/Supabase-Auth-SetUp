@@ -5,7 +5,7 @@ import { Button } from "./components/ui/button";
 
 export const Home = () => {
 
-    const{signInWithGitHub,signInWithGoogle,signOut,user}=useAuth()
+    const{user,signInWithGitHub,signInWithGoogle,signOut}=useAuth()
 
     const displayUser=user?.user_metadata.user_name || user?.email;
 
