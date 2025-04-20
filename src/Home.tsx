@@ -5,7 +5,7 @@ import { Button } from "./components/ui/button";
 
 export const Home = () => {
 
-    const{signInWithGitHub,signOut,user}=useAuth()
+    const{signInWithGitHub,signInWithGoogle,signOut,user}=useAuth()
 
     const displayUser=user?.user_metadata.user_name || user?.email;
 
@@ -23,9 +23,14 @@ export const Home = () => {
                     </Button>
                 </div>
             ):(
+                <div>
             <Button onClick={signInWithGitHub} className="bg-white text-black hover:bg-white-200">
                 Sign with GitHub
             </Button>
+            <Button onClick={signInWithGoogle} className="bg-white text-black hover:bg-white-200">
+            Sign with Google
+            </Button>
+            </div>
             )}
             
         </div>
