@@ -1,8 +1,6 @@
 "use client";
-import React from "react";
 import { useAuth } from "./context/AuthContext";
 import { Button } from "./components/ui/button";
-import { AnimatedBackground } from 'animated-backgrounds';
 
 
 export const Home = () => {
@@ -13,8 +11,7 @@ export const Home = () => {
 
     return(
             
-        <div className=" h-screen flex items-center justify-center">
-            <AnimatedBackground animationName="starryNight" blendMode="difference"/>
+        <div className="bg-black h-screen flex items-center justify-center">
 
             {user?(
                 <div className="bg-white p-10 rounded-lg flex flex-col items-center justify-center gap-4">
