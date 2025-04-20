@@ -23,11 +23,11 @@ export const Home = () => {
                     </Button>
                 </div>
             ):(
-                <div>
-            <Button onClick={signInWithGitHub} className="bg-white text-black hover:bg-white-200">
+                <div className="bg-white p-20 rounded-lg flex flex-col items-center justify-center gap-4">
+            <Button onClick={signInWithGitHub} className="bg-black text-white hover:bg-white-200">
                 Sign with GitHub
             </Button>
-            <Button onClick={signInWithGoogle} className="bg-white text-black hover:bg-white-200">
+            <Button onClick={signInWithGoogle} className="bg-black text-white hover:bg-white-200">
             Sign with Google
             </Button>
             </div>
