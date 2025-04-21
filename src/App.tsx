@@ -5,11 +5,9 @@ function App() {
 
   return (
     <div>
-      <div>
-        <Routes>
-          <Route path="/" element={<Home/>} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+      </Routes>
     </div>
   )
 }
